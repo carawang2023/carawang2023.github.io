@@ -1,1 +1,10 @@
-c
+/*
+This is css for "index.html".
+*/
+h1, h2{
+color: blue;
+}
+
+body {
+background-color: gray;
+}
