@@ -1,10 +1,103 @@
-/*
-This is css for "index.html".
-*/
-h1, h2{
-color: blue;
+@import url('https://fonts.googleapis.com/css?family=Trirong&effect=fire');
+body {
+    background-color: beige;
 }
 
-body {
-background-color: gray;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trirong', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1.font-effect-fire{
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing:2mm;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header nav li a {
+    background-color: blueviolet;
+    border: 1px solid black;
+    color: white;
+    display: inline-block;
+    padding: 2mm;
+    text-align: center;
+}
+
+header nav li a:hover {
+    background-color: aquamarine;
+    color: rgb(53, 12, 92);
+}
+
+#AboutMe {
+    color: darkblue;
+    width: 90%;
+    height: 80%;
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid black;
+}
+
+#hobby {
+    img:first-of-type + img
+}
+
+section#hobby > p:first-of-type::first-letter {
+    background-color: red;
+    border: 1px solid #ff0000;
+    color: white;
+    font-size: 2em;
+    font-style: oblique;
+    padding: 5px 10px;
+}
+
+img {
+    border: 2px solid black;
+}
+
+#img1 {
+    float: left;
+    margin-right: 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+#block1{
+    display: flex;
+}
+
+.ContactMe {
+    float: left;
+    width: 33.3%;
+    border:2px solid black;
+    box-sizing: border-box;
+}
+
+.ClearFix{
+    clear:both;
+}
+
+footer {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "middle middle"
+        "footer footer";
+}
+
+footer nav.main {
+    grid-area: header;
+}
+
+footer small {
+    grid-area: footer;
+}
+
+footer ul.social {
+    grid-area: header / 2;
 }
