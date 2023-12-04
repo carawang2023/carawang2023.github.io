@@ -1,15 +1,27 @@
+/* Google Font */
 @import url('https://fonts.googleapis.com/css?family=Trirong&effect=fire');
 body {
     background-color: beige;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4{
     font-family: 'Trirong', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 h1.font-effect-fire{
     font-size: 36px;
     font-weight: 800;
     letter-spacing:2mm;
+}
+
+header {
+    position: fixed;
+    /*height: 6rem;*/
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 header ul {
@@ -32,56 +44,101 @@ header nav li a:hover {
     color: rgb(53, 12, 92);
 }
 
-#AboutMe {
-    color: darkblue;
-    width: 90%;
+/* every section */
+#about {
     height: 80%;
-    margin: 25px;
-    padding: 25px;
-    border: 2px solid black;
+    padding: 50px;
+    background-color: #e485df;
+    color: black;
+    position: relative;
+    margin-top: 180px;
 }
 
 #hobby {
-    img:first-of-type + img
+    height: 80%;
+    padding: 50px;
+    background-color: #bfdba3;
+    color: black;
+    position: relative;
+    margin-top: 80px;
 }
 
-section#hobby > p:first-of-type::first-letter {
-    background-color: red;
-    border: 1px solid #ff0000;
-    color: white;
-    font-size: 2em;
-    font-style: oblique;
-    padding: 5px 10px;
+#nail {
+    width: 95%;
+    padding:25px 50px;
+    background-color: #acc593;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+#nail-text {
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
 }
 
 img {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
 }
 
-#img1 {
-    float: left;
-    margin-right: 1em;
+#english
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #acc593;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+
+/* table */
+table {
+    text-align: center;
 }
 
 tr:nth-child(even) {
     background-color: #D6EEEE;
 }
 
-#block1{
-    display: flex;
+#contact {
+    height: 80%;
+    padding: 50px;
+    background-color: #c39099;
+    color: black;
+    position: relative;
+    margin-top: 80px;
 }
 
-.ContactMe {
-    float: left;
-    width: 33.3%;
-    border:2px solid black;
-    box-sizing: border-box;
+.why
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #d6b5bb;
+    color: black;
+    position: relative;
+    margin: 10px;
 }
 
-.ClearFix{
-    clear:both;
+.how
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #d6b5bb;
+    color: black;
+    position: relative;
+    margin: 10px;
 }
 
+.when
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #d6b5bb;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+
+/* footer */
 footer {
     display: grid;
     grid-template-areas: 
@@ -100,4 +157,16 @@ footer small {
 
 footer ul.social {
     grid-area: header / 2;
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width: 1000px){
+    body{
+        background-color: rgb(70, 46, 138);
+    }
+    h1, h2, h3, h4{
+        text-align: center;
+    }
+    footer a {
+        color: #000;
+    }
 }
