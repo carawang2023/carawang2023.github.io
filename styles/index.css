@@ -159,14 +159,107 @@ footer ul.social {
     grid-area: header / 2;
 }
 
-@media (min-width: 100px) and (max-width: 1000px){
+@media screen and (min-device-width: 100px) and (max-device-width: 1000px){
     body{
         background-color: rgb(70, 46, 138);
     }
+
     h1, h2, h3, h4{
         text-align: center;
     }
+
     footer a {
         color: #000;
+    }
+
+    #about {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #e485df;
+        color: black;
+        position: relative;
+        margin-top: 120px;
+    }
+
+    #hobby {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #bfdba3;
+        color: black;
+        position: relative;
+        margin-top: 40px;
+        /*margin: 40px 5% 0 5%;*/
+    }
+
+    #nail {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #acc593;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    #english {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #acc593;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    #contact {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #c39099;
+        color: black;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .why {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #d6b5bb;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .how {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #d6b5bb;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    .when {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #d6b5bb;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    h1.font-effect-fire {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 1mm;
+    }
+
+    figure {
+        margin: 0;
     }
 }
