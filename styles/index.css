@@ -159,6 +159,7 @@ footer ul.social {
     grid-area: header / 2;
 }
 
+/*Mobile-first responsiveness*/
 @media (min-width: 100px) and (max-width: 1000px){
     body{
         background-color: rgb(70, 46, 138);
