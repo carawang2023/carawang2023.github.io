@@ -15,7 +15,6 @@ button.addEventListener('mouseout', function() {
 button.textContent = 'I\'m a button';
 });
 
-// Get references to the button and paragraph elements
 const btnCounter = document.getElementById('btn-counter');
 const txtCounter = document.getElementById('txt-counter');
 
