@@ -138,6 +138,30 @@ tr:nth-child(even) {
     margin: 10px;
 }
 
+#js {
+    height: 80%;
+    padding: 50px;
+    background-color: #9d90c3;
+    color: black;
+    position: relative;
+    margin-top: 80px;
+}
+
+
+#btn-alert {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f296ed;
+}
+
+#btn-counter {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f296ed;
+}
+
 /* footer */
 footer {
     display: grid;
@@ -159,7 +183,6 @@ footer ul.social {
     grid-area: header / 2;
 }
 
-/*Mobile-first responsiveness*/
 @media (min-width: 100px) and (max-width: 1000px){
     body{
         background-color: rgb(70, 46, 138);
@@ -191,6 +214,7 @@ footer ul.social {
         color: black;
         position: relative;
         margin-top: 40px;
+        /*margin: 40px 5% 0 5%;*/
     }
 
     #nail {
@@ -218,6 +242,16 @@ footer ul.social {
         height: 80%;
         padding: 10px;
         background-color: #c39099;
+        color: black;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    #js {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #9d90c3;
         color: black;
         position: relative;
         margin-top: 40px;
