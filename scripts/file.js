@@ -4,21 +4,21 @@ document.getElementById("year").innerHTML = "&copy; Juanjuan Wang," + d;
 const button = document.getElementById('btn-alert');
 
 button.addEventListener('click', function() {
-    alert('Hello, World!');
+  alert('Hello, World!');
 });
 
 button.addEventListener('mouseover', function() {
-button.textContent = 'Click me';
+  button.textContent = 'Click me';
 });
 
 button.addEventListener('mouseout', function() {
-button.textContent = 'I\'m a button';
+  button.textContent = 'I\'m a button';
 });
 
+// Incrementing Button and if-else
 const btnCounter = document.getElementById('btn-counter');
 const txtCounter = document.getElementById('txt-counter');
 
-// Incrementing Button and if-else
 let counter = 1;
 
 btnCounter.addEventListener('click', function() {
@@ -26,9 +26,11 @@ btnCounter.addEventListener('click', function() {
   txtCounter.textContent = 'Number: ' + counter;
 
   if (counter % 2 === 0) {
-    txtCounter.style.color = 'blue';
+    txtCounter.classList.add('even');
+    txtCounter.classList.remove('odd');
   } else {
-    txtCounter.style.color = 'red';
+    txtCounter.classList.add('odd');
+    txtCounter.classList.remove('even');
   }
 });
 
