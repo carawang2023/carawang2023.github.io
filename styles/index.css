@@ -162,6 +162,14 @@ tr:nth-child(even) {
     background-color: #f296ed;
 }
 
+.even {
+    color: blue;
+}
+
+.odd {
+    color: red;
+}
+
 /* footer */
 footer {
     display: grid;
